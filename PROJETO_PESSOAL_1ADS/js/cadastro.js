@@ -28,8 +28,17 @@ btn.addEventListener('click', function cadastrar_validar(){
         window.alert('Campo inválido');
         senha_usuario.style.borderColor = 'red';
 
-    }else if (confirmar_senha_usuario != senha_usuario) {
-        window.alert('As senhas não são iguais');
+    }else if (senha_usuario < 8) {
+        window.alert('Sua senha precisa ter no mínimo oito caracteres');
         confirmar_senha_usuario.style.borderColor = 'red';
+
+    }else if (confirmar_senha_usuario != senha_usuario) {
+        window.alert('As senhas cadastradaws não coinciden')
+        confirmar_senha_usuario.style.borderColor = 'red';
+
+    }else{
+
     }
 })
+
+return cadastrar_validar();
