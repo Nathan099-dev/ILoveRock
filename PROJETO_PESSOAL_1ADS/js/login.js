@@ -15,6 +15,8 @@ btn.addEventListener('click', function login(){
         window.alert('Digite sua senha');
         senha.style.borderColor = 'red';
     }
+
+    return login();
 });
 
-return login();
+
