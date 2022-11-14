@@ -20,7 +20,7 @@ insert into usuario_cadastrado values
 (null, 'Matheus', 'Mosca', 25, 'masculino'),
 (null, 'Ronaldo', 'Tonini', 64, 'masculino'),
 (null, 'Anna Luiza', 'Bertarello', 12, 'feminino');
-(null, 'Márcia', 'Gamba', 62, 'feminino');
+(null, 'Márcia', 'Gamba', 60, 'feminino');
 (null, 'Laís', 'Mariko', 25, 'feminino');
 (null, 'Bianca ', 'de Villa',19, 'feminino');
 (null, 'Nicolas', 'de Villa', 17, 'masculino');
