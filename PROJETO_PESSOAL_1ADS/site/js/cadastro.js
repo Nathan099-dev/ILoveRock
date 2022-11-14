@@ -12,3 +12,5 @@ function cadastrar(pessoa){
         pessoa.style.borderColor = 'red';
     }
 }
+
+cadastrar();
