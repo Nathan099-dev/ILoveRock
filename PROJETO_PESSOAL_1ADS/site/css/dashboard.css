@@ -69,5 +69,8 @@ header{
 #dashboard{
     width: 100%;
     padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
