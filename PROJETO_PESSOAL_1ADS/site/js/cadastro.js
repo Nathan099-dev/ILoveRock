@@ -1,8 +1,8 @@
-function cadastrar(){
+function cadastrar(pessoa){
     const pessoa = {
-        nome_pessoa: nome.value,
-        idade_pessoa: idade.value,
-        email_cadastrado: mail.value,
+        nome: nome.value,
+        idade: idade.value,
+        email: mail.value,
         senha: pwd.value,
         confirma_senha: confirmacao_senha.value,
     },
