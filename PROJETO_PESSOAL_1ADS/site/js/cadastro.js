@@ -37,8 +37,7 @@ btn.addEventListener('click', function cadastrar_validar(){
         confirmar_senha_usuario.style.borderColor = 'red';
 
     }else{
-
+        return cadastrar_validar();
     }
-})
+});
 
-return cadastrar_validar();
