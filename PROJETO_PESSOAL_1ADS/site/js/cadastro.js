@@ -36,7 +36,7 @@ function cadastrar(){
         confirma_senha.style.borderColor = 'red';
 
     }else{
-        pessoa.style.borderColor = 'green'
+        document.innerHTML = ''
     }
 
     return cadastrar();
