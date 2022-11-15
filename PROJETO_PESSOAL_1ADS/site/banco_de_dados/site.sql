@@ -107,12 +107,26 @@ INSERT INTO banda_progressivo (id_banda_progressivo, nome) VALUES
 (10, 'Mutantes');
 
 INSERT INTO banda_metal_melódico (id_banda_metal_melódico, nome) VALUES
-()
-()
-()
-()
-()
-()
-()
-()
-()
+(1, 'Heavenly'),
+(2, 'Nightwish'),
+(3, 'Angra'),
+(4, 'Shaman'),
+(5, 'Blind Guardian'),
+(6, 'DragonForce'),
+(7, 'Stratovarius'),
+(8, 'Manowar'),
+(9, 'Symphony X');
+(10, 'Kalidia');
+(11, 'Lunática');
+(12, 'Temperence');
+(13, 'Eluveitie');
+(14, 'Within Temptation');
+(15, 'Avantasia');
+(16, 'Viper');
+
+
+SELECT * FROM usuario_cadastrado;
+SELECT * FROM banda_heavy_metal;
+SELECT * FROM banda_hard_rock;
+SELECT * FROM banda_progressivo;
+SELECT * FROM banda_metal_melódico;
