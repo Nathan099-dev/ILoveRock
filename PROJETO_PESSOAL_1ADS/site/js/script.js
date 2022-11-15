@@ -4,5 +4,5 @@ botao.onclick = function goTop(){
     behavior: 'smooth'
 };
 
-return goTop();
+goTop();
 
