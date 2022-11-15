@@ -28,23 +28,28 @@ insert into usuario_cadastrado values
 -- Criando as tabelas
 
 CREATE TABLE banda_heavy_metal(
-id_banda int PRIMARY KEY,
+id_banda_heavy_metal int PRIMARY KEY auto_increment,
 nome VARCHAR(40)
 );
 
 CREATE TABLE banda_hard_rock(
-id_banda int PRIMARY KEY
+id_banda_hard_rock int PRIMARY KEY auto_increment,
 nome VARCHAR(40)
 );
 
 CREATE TABLE banda_progressivo(
-id_banda int PRIMARY KEY,
+id_banda_progressivo int PRIMARY KEY auto_increment,
 nome VARCHAR(40)
+);
+
+CREATE TABLE banda_metal_melódico(
+    id_banda_metal_melódico int PRIMARY KEY auto_increment,
+    nome VARCHAR(40)
 );
 
 -- inserindo dados nas tabelas
 
-INSERT INTO banda_heavy_metal VALUES 
+INSERT INTO banda_heavy_metal (id_banda_heavy_metal, nome) VALUES 
 (1, 'Guns and Roses'),
 (2, 'System of a Down'),
 (3, 'Slipknot'),
@@ -66,7 +71,7 @@ INSERT INTO banda_heavy_metal VALUES
 (20, 'Savatage');
 
 
-INSERT INTO banda_hard_rock VALUES 
+INSERT INTO banda_hard_rock (id_banda_hard_rock, nome) VALUES 
 (1, 'Scorpions'),
 (2, 'Queen'),
 (3, 'Bon Jovi'),
@@ -89,7 +94,7 @@ INSERT INTO banda_hard_rock VALUES
 (20, 'Whitesnake');
 
 
-INSERT INTO banda_progressivo VALUES
+INSERT INTO banda_progressivo (id_banda_progressivo, nome) VALUES
 (1, 'Casa das Máquinas'),
 (2, 'Kansas'),
 (3, 'Rush'),
@@ -100,3 +105,14 @@ INSERT INTO banda_progressivo VALUES
 (8, 'Jethro Tull'),
 (9, 'Focus'),
 (10, 'Mutantes');
+
+INSERT INTO banda_metal_melódico (id_banda_metal_melódico, nome) VALUES
+()
+()
+()
+()
+()
+()
+()
+()
+()
