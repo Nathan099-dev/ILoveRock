@@ -39,6 +39,6 @@ function cadastrar(){
         document.innerHTML = ''
     }
 
-    return cadastrar();
 }
 
+cadastrar();
