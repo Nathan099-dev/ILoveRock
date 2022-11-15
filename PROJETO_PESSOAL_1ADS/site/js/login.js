@@ -3,22 +3,29 @@ const senha = document.getElementById('password_login');
 const btn = document.getAnimations('btn_login');
 
 btn.addEventListenner('click', function login(){
-    if (email.value == null) {
-        window.alert('Campo inválido');
-        email.style.borderColor = 'red';
+    const email_usuario = email.value;
+    const senha_usuario = senha.value;
 
-    }else{
-        email.style.borderColor = none;
-    }
+    var tentativas_login = 3;
+    var tentativas_efetuadas = 0;
 
-    if (senha.value == null) {
-        window.alert('Campo inválido');
-        senha.style.borderColor = 'red';
+    while (tentativas_login > 0 && tentativas_efetuadas < 3) {
+        if (email_usuario.value == null) {
+            window.alert('Campo inválido');
+            email_usuario.style.borderColor = 'red';
+            
 
-    }else{
-        senha.borderColor = none;
+        }else if (senha_usuario.value == null) {
+            window.alert('Campo inválido');
+            senha_usuario.style.borderColor = 'red';
+
+            tentativas_login --;
+            tentativas_efetuadas ++;
+
+        }else{
+            login();
+            return true;
+        }
     }
 });
-
-return login();
 
