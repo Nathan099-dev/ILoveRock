@@ -133,7 +133,7 @@ SELECT * FROM banda_progressivo;
 SELECT * FROM banda_metal_melódico;
 
 fk_usuario INT, 
-FOREIGN KEY (fk_usuario_cadastrado) REFERENCES usuario_cadastrado (id_usuario)
+FOREIGN KEY (fk_usuario_cadastrado) REFERENCES usuario_cadastrado (id_usuario);
 
 
 -- juntando tabelas
