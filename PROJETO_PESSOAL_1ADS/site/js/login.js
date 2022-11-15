@@ -16,7 +16,7 @@ btn.addEventListener('click', function login(){
         senha.style.borderColor = 'red';
     }
 
-    return login();
 });
 
+login();
 
