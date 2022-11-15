@@ -1,6 +1,8 @@
 const botao = document.getElementById('btn');
-botao.addEventListenner('click', function goTop(){
-top: 0;
-});
+botao.onclick = function goTop(){
+    top: 0
+    behavior: 'smooth'
+};
 
-goTop();
+return goTop();
+
