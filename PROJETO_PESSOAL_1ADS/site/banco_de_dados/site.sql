@@ -124,9 +124,17 @@ INSERT INTO banda_metal_melódico (id_banda_metal_melódico, nome) VALUES
 (15, 'Avantasia');
 (16, 'Viper');
 
+-- mostrando os dados na tela
 
 SELECT * FROM usuario_cadastrado;
 SELECT * FROM banda_heavy_metal;
 SELECT * FROM banda_hard_rock;
 SELECT * FROM banda_progressivo;
 SELECT * FROM banda_metal_melódico;
+
+fk_usuario INT, 
+FOREIGN KEY (fk_usuario_cadastrado) REFERENCES usuario_cadastrado (id_usuario)
+
+
+-- juntando tabelas
+
