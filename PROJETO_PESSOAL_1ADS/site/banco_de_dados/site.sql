@@ -57,3 +57,4 @@ INSERT INTO bandas VALUES
 (NULL, 'Phill Collins'),
 (NULL, 'Eagles');
 
+FOREIGN KEY (fk_usuario_cadastrado) REFERENCES usuario_cadastrado (id_usuario);
