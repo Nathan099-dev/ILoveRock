@@ -1,9 +1,9 @@
-create database iLoveRock;
-use iLoveRock;
+CREATE DATABASE iLoveRock;
+USE iLoveRock;
 
 -- criando tablas
 
-create table usuario_cadastrado(
+CREATE TABLE usuario_cadastrado(
     id_usuario int primary key auto_increment;
     nome varchar(45);
     sobrenome varchar(45);
@@ -45,7 +45,7 @@ INSERT INTO subgêneros VALUES
 (null, 'soft rock');
 
 
-INSERT into bandas VALUES 
+INSERT INTO bandas VALUES 
 (NULL, 'Iron Maiden'),
 (NULL, 'Angra'),
 (NULL, 'Evannecence'),
@@ -56,3 +56,4 @@ INSERT into bandas VALUES
 (NULL, 'Kalidia'),
 (NULL, 'Phill Collins'),
 (NULL, 'Eagles');
+
