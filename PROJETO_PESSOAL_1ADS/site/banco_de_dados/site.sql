@@ -4,10 +4,10 @@ USE iLoveRock;
 -- criando tablas
 
 CREATE TABLE usuario_cadastrado(
-    id_usuario int primary key auto_increment;
-    nome varchar(45);
-    sobrenome varchar(45);
-    idade int;
+    id_usuario int primary key auto_increment,
+    nome varchar(45),
+    sobrenome varchar(45),
+    idade int,
     sexo varchar(45)
 );
 
