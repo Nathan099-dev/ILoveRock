@@ -23,9 +23,9 @@ btn.addEventListenner('click', function login(){
             tentativas_efetuadas ++;
 
         }else{
-            login();
-            return true;
+            window.location.replace('./dashboard.html')
         }
     }
 });
 
+login();
