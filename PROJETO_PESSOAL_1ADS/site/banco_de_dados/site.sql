@@ -46,13 +46,13 @@ INSERT INTO subgêneros VALUES
 
 
 INSERT into bandas VALUES 
-('Iron Maiden'),
-('Angra'),
-('Evannecence'),
-('Whitesnake'),
-('Casa das máquinas'),
-('Kansas'),
-('Nightwish'),
-('Kalidia'),
-('Phill Collins'),
-('Eagles');
+(NULL, 'Iron Maiden'),
+(NULL, 'Angra'),
+(NULL, 'Evannecence'),
+(NULL, 'Whitesnake'),
+(NULL, 'Casa das máquinas'),
+(NULL, 'Kansas'),
+(NULL, 'Nightwish'),
+(NULL, 'Kalidia'),
+(NULL, 'Phill Collins'),
+(NULL, 'Eagles');
