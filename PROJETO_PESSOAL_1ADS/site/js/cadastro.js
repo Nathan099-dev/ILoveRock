@@ -1,44 +1,24 @@
+const lista_usuario = []
+
 function cadastrar(){
-    const pessoa = {
+    const novo_usuario = {
         nome: nome.value,
         idade: idade.value,
-        email: mail.value,
-        senha: pwd.value,
-        confirma_senha: confirmacao_senha.value,
-    },
+        email: email.value,
+        senha: senha.value,
+        confirmar_sua_senha: confirmacao_senha.value,
+    }
+    lista_usuario.push(novo_usuario);
 
-    if (nome.value == null) {
-        window.alert('Campo inválido');
-        nome.style.borderColor = 'red';
+    for(var novo_usuario; lista_usuario.length; novo_usuario++){
+        if (novo_usuario.value == null) {
+            window.alert('Campos inválidos');
+            novo_usuario.style.borderColor = 'red';
 
-    }else if (idade.value == null) {
-        window.alert('Campo inválido');
-        idade.style.borderColor = 'red';
-
-    }else if (email.value == null) {
-        window.alert('Campo inválido');
-        email.style.borderColor = 'red';
-
-    }else if (email.indexOf('@').value == -1 || email.indexOf('.').value == -1) {
-        window.alert('Isso não é um email');
-        email.style.borderColor = 'red';
-
-    }else if (senha.value == null) {
-        window.alert('Campo inválido');
-        senha.style.borderColor = 'red';
-
-    }else if (senha.length < 8) {
-        window.alert('Sua senha precisa ter pelo menos oito caracteres')
-        senha.style.borderColor = 'red';
-
-    }else if (confirma_senha != senha) {
-        window.alert('As duas senhas cadastradas não coincidem');
-        confirma_senha.style.borderColor = 'red';
-
-    }else{
-        document.innerHTML = ''
+        }else{
+            novo_usuario.style.borderColor = 'green'
+        }
     }
 
+    return cadastrar();
 }
-
-cadastrar();
