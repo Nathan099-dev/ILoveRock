@@ -1,3 +1,5 @@
+drop database iLoveRock;
+
 CREATE DATABASE iLoveRock;
 USE iLoveRock;
 
@@ -15,17 +17,21 @@ CREATE TABLE subgêneros(
     id_subgrenero int PRIMARY KEY auto_increment,
     nome VARCHAR(40)
 );
+drop table banda;
 
 CREATE TABLE bandas(
     id_banda int PRIMARY KEY auto_increment,
-    nome VARCHAR(40)
+    nome VARCHAR(40),
+   fk_subgênero int,
+   FOREIGN KEY fk_subgênero
+    (fk_subgênero) references subgêneros (id_subgêneros)
 );
 
 -- inserindo dados nas tbelas
 
 INSERT INTO usuario_cadastrado VALUES
 (null, 'Douglas', 'Jen', 40, 'masculino'),
-(null, 'Nathan', 'Tonini' 23, 'masculino'),
+(null, 'Nathan', 'Tonini', 23, 'masculino'),
 (null, 'Bruno', 'Tonini', 21, 'masculino'),
 (null, 'Matheus', 'Mosca', 25, 'masculino'),
 (null, 'Ronaldo', 'Tonini', 64, 'masculino'),
@@ -46,14 +52,15 @@ INSERT INTO subgêneros VALUES
 
 
 INSERT INTO bandas VALUES 
-(NULL, 'Iron Maiden'),
-(NULL, 'Angra'),
-(NULL, 'Evannecence'),
-(NULL, 'Whitesnake'),
-(NULL, 'Casa das máquinas'),
-(NULL, 'Kansas'),
-(NULL, 'Nightwish'),
-(NULL, 'Kalidia'),
-(NULL, 'Phill Collins'),
-(NULL, 'Eagles');
+(NULL, 'Iron Maiden', 2),
+(NULL, 'Angra', 4),
+(NULL, 'Evannecence', 4),
+(NULL, 'Whitesnake', 1),
+(NULL, 'Casa das máquinas', 3),
+(NULL, 'Kansas', 3),
+(NULL, 'Nightwish', 4),
+(NULL, 'Kalidia', 4),
+(NULL, 'Phill Collins', 5),
+(NULL, 'Eagles', 5);
 
+select * from subgêneros;
