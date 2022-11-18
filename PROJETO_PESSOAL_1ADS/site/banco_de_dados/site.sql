@@ -1,5 +1,3 @@
-drop database iLoveRock;
-
 CREATE DATABASE iLoveRock;
 USE iLoveRock;
 
@@ -63,4 +61,3 @@ INSERT INTO bandas VALUES
 (NULL, 'Phill Collins', 5),
 (NULL, 'Eagles', 5);
 
-select * from subgêneros;
