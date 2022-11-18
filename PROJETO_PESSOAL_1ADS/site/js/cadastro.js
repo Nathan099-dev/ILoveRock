@@ -10,7 +10,7 @@ function cadastrar(){
     }
     lista_usuario.push(novo_usuario);
 
-    for(var novo_usuario; lista_usuario.length; novo_usuario++){
+    for(var novo_usuario_cadastrado; lista_usuario.length; novo_usuario++){
         if (novo_usuario.value == null) {
             window.alert('Campos inválidos');
             novo_usuario.style.borderColor = 'red';
