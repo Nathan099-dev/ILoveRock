@@ -89,3 +89,13 @@ header{
     background-color: #282828;
 }
 
+
+#dashboard .dashboard-content input{
+    padding: .5rem;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
