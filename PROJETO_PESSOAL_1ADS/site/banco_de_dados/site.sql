@@ -4,24 +4,25 @@ USE iLoveRock;
 -- criando tablas
 
 CREATE TABLE usuario_cadastrado(
-    id_usuario int primary key auto_increment,
+    id_usuario int PRIMARY KEY auto_increment,
     nome varchar(45),
     sobrenome varchar(45),
     idade int,
-    sexo varchar(45)
+    sexo varchar(45),
+	fk_bandas int,
+	FOREIGN KEY ('fkbandas') REFERENCES subgêneros('id_subgenero')
 );
 
 CREATE TABLE subgêneros(
-    id_subgrenero int PRIMARY KEY auto_increment,
+    id_subgenero int PRIMARY KEY auto_increment,
     nome VARCHAR(40)
 );
-drop table banda;
 
 CREATE TABLE bandas(
     id_banda int PRIMARY KEY auto_increment,
     nome VARCHAR(40),
-   fk_subgênero int,
-   FOREIGN KEY fk_subgênero
+	fk_subgênero int,
+	FOREIGN KEY fk_subgênero
     (fk_subgênero) references subgêneros (id_subgêneros)
 );
 
@@ -61,3 +62,4 @@ INSERT INTO bandas VALUES
 (NULL, 'Phill Collins', 5),
 (NULL, 'Eagles', 5);
 
+SELECT * FROM subgêneros JOIN bandas ON id_banda = fk_subgênero;
