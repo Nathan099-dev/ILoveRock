@@ -62,4 +62,9 @@ INSERT INTO bandas VALUES
 (NULL, 'Phill Collins', 5),
 (NULL, 'Eagles', 5);
 
-SELECT * FROM subgêneros JOIN bandas ON id_banda = fk_subgênero;
+
+SELECT * from usuario_cadastrado;
+SELECT * FROM banda;
+SELECT * FROM subgêneros;
+
+SELECT * FROM bandas JOIN bandas ON subgêneros WHERE fk_bandas = id_subgenero;
