@@ -13,7 +13,7 @@ CREATE TABLE usuario_cadastrado(
 	FOREIGN KEY ('fkbandas') REFERENCES subgêneros('id_subgenero')
 );
 
-CREATE TABLE subgêneros(
+CREATE TABLE subgeneros(
     id_subgenero int PRIMARY KEY auto_increment,
     nome VARCHAR(40)
 );
@@ -21,7 +21,7 @@ CREATE TABLE subgêneros(
 CREATE TABLE bandas(
     id_banda int PRIMARY KEY auto_increment,
     nome VARCHAR(40),
-	fk_subgênero int,
+	fk_subgenero int,
 	FOREIGN KEY fk_subgênero
     (fk_subgênero) references subgêneros (id_subgêneros)
 );
@@ -42,7 +42,7 @@ INSERT INTO usuario_cadastrado VALUES
 
 
 
-INSERT INTO subgêneros VALUES
+INSERT INTO subgeneros VALUES
 (null, 'hard rock'),
 (null, 'heavy metal'),
 (null, 'Progressivo'),
@@ -62,5 +62,13 @@ INSERT INTO bandas VALUES
 (NULL, 'Phill Collins', 5),
 (NULL, 'Eagles', 5);
 
+SELECT * FROM usuario_cadastrado u;
+SELECT * FROM subgeneros s;
+SELECT * FROM bandas b;
 
+<<<<<<< HEAD
+
+SELECT usuario_cadastrado u JOIN u.nome ON banda.nome; 
+=======
 SELECT * FROM bandas JOIN bandas ON subgêneros WHERE fk_bandas = id_subgenero;
+>>>>>>> 740c9cedc6d9ce798ce2afc17c9599a4417e0081
