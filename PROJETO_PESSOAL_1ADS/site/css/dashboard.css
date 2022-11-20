@@ -42,41 +42,18 @@ header{
 
 }
 
-
-.menu{
-	display: flex;
-	justify-content:space-between;
-	margin-right:1rem;
-	
-}
-
- .menu-itens ul{
-	display:flex;
-	float: left;
-	list-style: none;
-	margin:.8rem;
+.menu-itens i#btn-back{
+	background-color:white;
 }
 
 
-.menu-itens li{
-	margin-right: 15px;
-}
-	
-.menu-itens a{
-	color: white;
-	text-decoration: none;
-	font-family:arial;
-	font-size:15px;
-	font-style:bold;
-}
-
-.menu-itens a:hover{
-	color: red;
-}
 
 
 #dashboard{
     width: 100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
     padding: 2.5rem;
     display: flex;
     margin: 5rem 0;
@@ -87,16 +64,19 @@ header{
 #dashboard .dashboard-content{
     width: 100%;
     max-width: 500px;
-    padding: 2rem;
+    padding: 2rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #282828;
+    background-color: #000;
 }
 
 
 #dashboard .dashboard-content select{
     padding: .5rem;
+	background-color: #282828;
+	border: 1px double red;
+	color:#fff;
 	margin: 0 12px;
     outline: none;
     display: flex;
