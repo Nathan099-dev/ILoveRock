@@ -13,7 +13,7 @@ CREATE TABLE usuario_cadastrado(
 	FOREIGN KEY ('fkbandas') REFERENCES subgêneros('id_subgenero')
 );
 
-CREATE TABLE subgeneros(
+CREATE TABLE subgêneros(
     id_subgenero int PRIMARY KEY auto_increment,
     nome VARCHAR(40)
 );
@@ -26,7 +26,7 @@ CREATE TABLE bandas(
     (fk_subgênero) references subgêneros (id_subgêneros)
 );
 
--- inserindo dados nas tbelas
+-- inserindo dados nas tabelas
 
 INSERT INTO usuario_cadastrado VALUES
 (null, 'Douglas', 'Jen', 40, 'masculino'),
@@ -66,6 +66,5 @@ SELECT * FROM usuario_cadastrado u;
 SELECT * FROM subgeneros s;
 SELECT * FROM bandas b;
 
-
-SELECT usuario_cadastrado u JOIN u.nome ON banda.nome; 
 SELECT * FROM bandas JOIN bandas ON subgêneros WHERE fk_bandas = id_subgenero;
+
