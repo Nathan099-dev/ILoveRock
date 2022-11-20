@@ -69,6 +69,4 @@ SELECT * FROM bandas b;
 <<<<<<< HEAD
 
 SELECT usuario_cadastrado u JOIN u.nome ON banda.nome; 
-=======
 SELECT * FROM bandas JOIN bandas ON subgêneros WHERE fk_bandas = id_subgenero;
->>>>>>> 740c9cedc6d9ce798ce2afc17c9599a4417e0081
