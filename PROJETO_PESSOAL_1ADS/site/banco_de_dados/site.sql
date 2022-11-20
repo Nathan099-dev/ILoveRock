@@ -66,5 +66,7 @@ SELECT * FROM usuario_cadastrado u;
 SELECT * FROM subgeneros s;
 SELECT * FROM bandas b;
 
+-- juntando tabelas
+
 SELECT * FROM bandas JOIN bandas ON subgêneros WHERE fk_bandas = id_subgenero;
 
