@@ -3,6 +3,8 @@
     <link rel="stylesheet" href="../css/cadastro.css">
 <head>
     <meta charset="UTF-8">
+	<script src="cadastro.js"></script>
+	<script src="login.js"></script>
     <script src="../js/cadastro.js"></script>c
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +29,7 @@
          <main>
             <section id="cadastro">
                <div class="cadastro-box">
-                <h2>Faça seu cadastro em nosso site</h2>
+                <h2>Faça seu cadastro</h2>
                 <div class="container">
                     <form method="get">
                         <label for="Nome">Nome</label>
@@ -40,7 +42,7 @@
                         <input type="password" id="input_senha" placeholder="*************">
                         <label for="senha">Confirme sua senha</label>
                         <input type="password"  id="input_confirma_senha" placeholder="**********">
-                        <button id="botao_cadastrar" onclick="cadastrar()">Cadastrar</button>
+                        <button id="botao_cadastrar" onclick="validar_campo_cadastro()">Cadastrar</button>
                     </form>
                 </div>
                </div>
