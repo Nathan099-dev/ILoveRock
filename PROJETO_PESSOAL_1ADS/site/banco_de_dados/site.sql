@@ -66,7 +66,6 @@ SELECT * FROM usuario_cadastrado u;
 SELECT * FROM subgeneros s;
 SELECT * FROM bandas b;
 
-<<<<<<< HEAD
 
 SELECT usuario_cadastrado u JOIN u.nome ON banda.nome; 
 SELECT * FROM bandas JOIN bandas ON subgêneros WHERE fk_bandas = id_subgenero;
