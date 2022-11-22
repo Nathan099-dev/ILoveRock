@@ -42,10 +42,20 @@ header{
 
 }
 
-.menu-itens i#btn-back{
-	background-color:white;
+.menu-itens button{
+    color: white;
+    background-color: red;
+    border: 0;
+    padding: 4px 8px;
+    float: right;
+    cursor: pointer;
+    margin-top: -30px;
+    margin-right: 1.5rem;
 }
 
+.menu-itens button:hover{
+    background-color: rgb(117, 3, 3);
+}
 
 
 
