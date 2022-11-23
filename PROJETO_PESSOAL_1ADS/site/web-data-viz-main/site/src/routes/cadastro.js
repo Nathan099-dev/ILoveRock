@@ -1,55 +1,23 @@
-function validar_campo_cadastro() {
-    var nome_usuario = input_nome.value;
-    var idade_usuario = input_idade.value;
-    var email_usuario = input_email.value;
-    var senha_usuario = input_senha.value;
-    var repetir_senha = input_confirma_senha.value;
-  
+const nome = document.getElementById('input_nome');
+const idade = document.getElementById('input_idade');
+const email = document.getElementById('input_email');
+const senha = document.getElementById('input_senha');
+const confirma_senha = document.getElementById('input_confirma_senha');
 
-    if (input_nome.value == "") {
-        alert('Preencha este campo corretamente');
-        input_nome.style.borderColor = '#ff0000';
+const botao = document.getElementById('botao_cadastrar');
 
-
-    }else if (input_idade.value == "") {
-        alert('Preencha este campo corretamente');
-        input_idade.style.borderColor = "#ff0000"
-
-
-    } else if (input_email.value == ""){
+const lista_usuarios = []
+botao.addEventListener('click', function cadastrar(){
+	for(var novo_usuario_cadastrado = 0; lista_usuarios.length; novo_usuario_cadastrado++){
+		lista_usuarios.push(novo_usuario_cadastrado);
+		novo_usuario_cadastrado++;
+	},
+	
+	if(nome.value == null){
 		alert('Campo inválido');
-		input_email.style.borderColor = 'red';
+		nome.style.borderColor = 'red'
 		
-	} else if (input_email.indexOf('@') == -1 || input_email.indexOf('.') == -1) {
-        alert('Preencha este campo corretamente');
-        input_email.style.borderColor = '#ff0000';
+	}
+});
 
-
-    } else if (input_senha.length < 8) {
-        alert('Sua senha precisa ter  pelo menos oito caracteres');
-        input_senha.style.borderColor = '#ff0000';
-
-
-    } else if (input_confirma_senharepetir_senha.length == 0) {
-        input_confrma_senha.style.borderColor = '#ff0000';
-        alert('Insira sua senha novamente');
-
-
-    } else if (senha_usuario.length != repetir_senha.length) {
-        input_repetir_senha.style.borderColor = '#ff0000';
-        alert('Os campos não coincidem');
-    } 
-
-    else {
-        input_nome.style.borderColor = 'rgb (0, 255, 0)';
-        input_idade.style.borderColor = 'rgb (0, 255, 0)';
-        input_email.style.borderColor = 'rgb (0, 255, 0)';
-        input_senha.style.borderColor = 'rgb (0, 255, 0)';
-        input_confirma_senha.style.borderColor = 'rgb (0, 255, 0)';
-        alert('Usuário Cadastrado com sucesso!');
-		
-		window.replace('../html/login.html');	
-
-    }
-
-};
+	cadastrar();

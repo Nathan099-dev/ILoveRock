@@ -42,7 +42,7 @@
                         <input type="password" id="input_senha" placeholder="*************">
                         <label for="senha">Confirme sua senha</label>
                         <input type="password"  id="input_confirma_senha" placeholder="**********">
-                        <button id="botao_cadastrar" onclick="validar_campo_cadastro()">Cadastrar</button>
+						<button onclick = "cadastrar()">Cadastrar</button>
                     </form>
                 </div>
                </div>
@@ -50,3 +50,19 @@
          </main>
     </body>
 </html>
+
+<script>
+	var campos_cadastro = document.querySelectorAll('input');
+	var botao = document.querySelector('button');
+	
+	botao.addEventListenner('click', function cadastrar(){
+		if(campos_cadastro.value == null){
+			window.alert('Campos inválidos');
+			
+		}else{
+			window.location.replace('login.html');
+		}
+	});
+	
+	cadastrar();
+</script>
