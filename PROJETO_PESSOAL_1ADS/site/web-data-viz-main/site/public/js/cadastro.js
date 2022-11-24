@@ -6,12 +6,9 @@ const confirmar_senha = document.getElementById('input_confirma_senha');
 
 const btn = document.querySelector('button');
 
-btn.addEventListener('click', function cadastrar_usuario(){
-    if(nome == ''){
-		nome.innerHTML = 'Campo inválido';
-		nome.style.borderColor = '#ff0000';
-		
-	}else if(email.value == ''){
-		window.alert('Campo inválido');
-	}
-});
+btn.onclick = function cadastrar(){
+    if (nome.value = '') {
+        nome.innerHTML = 'Campo inválido'
+        nome.style.borderColor = 'red'
+    }
+}
