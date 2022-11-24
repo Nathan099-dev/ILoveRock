@@ -3,9 +3,8 @@
     <link rel="stylesheet" href="../css/cadastro.css">
 <head>
     <meta charset="UTF-8">
-	<script src="cadastro.js"></script>
-	<script src="login.js"></script>
-    <script src="js/cadastro.js"></script>c
+	<script src="../js/cadastro.js"></script>
+	<script src="../js/login.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -51,18 +50,3 @@
     </body>
 </html>
 
-<script>
-	var campos_cadastro = document.querySelectorAll('input');
-	var botao = document.querySelector('button');
-	
-	botao.addEventListenner('click', function cadastrar(){
-		if(campos_cadastro.value == null){
-			window.alert('Campos inválidos');
-			
-		}else{
-			window.location.replace('login.html');
-		}
-	});
-	
-	cadastrar();
-</script>
