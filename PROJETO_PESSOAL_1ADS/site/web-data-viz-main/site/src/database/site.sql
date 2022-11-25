@@ -30,16 +30,16 @@ CREATE TABLE usuario_cadastrado(
 -- inserindo dados nas tabelas
 
 INSERT INTO usuario_cadastrado VALUES
-(null, 'Douglas', 'Jen', 40, 'masculino'),
-(null, 'Nathan', 'Tonini', 23, 'masculino'),
-(null, 'Bruno', 'Tonini', 21, 'masculino'),
-(null, 'Matheus', 'Mosca', 25, 'masculino'),
-(null, 'Ronaldo', 'Tonini', 64, 'masculino'),
-(null, 'Anna Luiza', 'Bertarello', 12, 'feminino'),
-(null, 'Márcia', 'Gamba', 60, 'feminino'),
-(null, 'Laís', 'Mariko', 25, 'feminino'),
-(null, 'Bianca ', 'de Villa',19, 'feminino'),
-(null, 'Nicolas', 'de Villa', 17, 'masculino');
+(null, 'Douglas', 'Jen', 40, 'masculino', 2),
+(null, 'Nathan', 'Tonini', 23, 'masculino', 4),
+(null, 'Bruno', 'Tonini', 21, 'masculino', 4),
+(null, 'Matheus', 'Mosca', 25, 'masculino', 1),
+(null, 'Ronaldo', 'Tonini', 64, 'masculino', 3),
+(null, 'Anna Luiza', 'Bertarello', 12, 'feminino', 3),
+(null, 'Márcia', 'Gamba', 60, 'feminino', 4),
+(null, 'Laís', 'Mariko', 25, 'feminino', 4),
+(null, 'Bianca ', 'de Villa',19, 'feminino', 5),
+(null, 'Nicolas', 'de Villa', 17, 'masculino', 5);
 
 
 
@@ -63,7 +63,9 @@ INSERT INTO bandas VALUES
 (NULL, 'Phill Collins', 5),
 (NULL, 'Eagles', 5);
 
-SELECT * FROM usuario_cadastrado u;
+select * from bandas;
+
+SELECT * FROM usuario_cadastrado;
 SELECT * FROM subgeneros s;
 SELECT * FROM bandas b;
 
@@ -71,3 +73,7 @@ SELECT * FROM bandas b;
 SELECT * FROM usuario_cadastrado JOIN usuario_cadastrado ON bandas WHERE fk_bandas = id_usuario;
 SELECT * FROM bandas JOIN bandas ON subgêneros WHERE fk_bandas = id_subgenero;
 
+
+select * from usuario_cadastrado;
+select * from subgeneros;
+select * from bandas;
