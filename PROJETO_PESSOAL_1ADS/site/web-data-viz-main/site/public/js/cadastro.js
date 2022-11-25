@@ -41,5 +41,4 @@ function cadastrar(){
 
     }
 
-    <li><a href="./login.html">Login</a></li>
 }
