@@ -1,12 +1,7 @@
-const botao = document.getElementById('btn');
-botao.onclick = function voltar_ao_topo(){
+function voltar_ao_topo(){
+	const botao = document.querySelector('button');
 	top: 0
 	left: 0
-	behavior: 'smooth'
-};
+	behavior: 'smooth';
 
-voltar_ao_topo();
-
-function voltar(){
-	window.location.replace('../index.html');
 }
