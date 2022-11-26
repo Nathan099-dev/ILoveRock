@@ -8,10 +8,10 @@ var PORTA = process.env.AMBIENTE_PROCESSO == "desenvolvimento" ? 3333 : 8080;
 
 var app = express();
 
-var indexRouter = require("./src/routes/index");
-var usuarioRouter = require("./src/routes/usuarios");
-var avisosRouter = require("./src/routes/avisos");
-var medidasRouter = require("./src/routes/medidas");
+var indexRouter = require("PROJETO_PESSOAL_1ADS/site/web-data-viz-main/site/public/html/index.html");
+var cadastroRouter = require("PROJETO_PESSOAL_1ADS/site/web-data-viz-main/site/public/html/cadastro.html");
+var loginRouter = require("PROJETO_PESSOAL_1ADS/site/web-data-viz-main/site/public/html/login.html");
+var medidasRouter = require("PROJETO_PESSOAL_1ADS/site/web-data-viz-main/site/public/html/dasboard.html");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
