@@ -15,6 +15,25 @@ botao.onclick = function cadastrar(){
 
     if (nome_usuario == '') {
         window.alert('Campo inválido');
+
+    }else if (idade_usuario == '') {
+        window.alert('Campo inválido');
+
+    }else if (email_usuario == '') {
+        window.alert('Campo inválido');
+
+    }else if (email_usuario.indexOf('@').value == -1 || email_usuario.indexOf('.').value == -1) {
+        Window.alert('email inválido');
+
+    }else if (senha_usuario == '') {
+        window.alert('Campo inválido');
+
+    }else if (senha_usuario.length < 8) {
+        window.alert('Cadastre uma senha maior');
+
+    }else if (confirmacao != senha_usuario) {
+        
     }
+
 }
 
