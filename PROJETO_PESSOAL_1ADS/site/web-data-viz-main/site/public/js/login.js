@@ -9,5 +9,9 @@ btn.addEventListener('click', function login(){
     if (email_usuario_login == '') {
         email_usuario_login.innerHTML = 'Campo inválido';
         email.style.borderColor = 'red';
+
+    }else if (senha_usuario_login == '') {
+        senha_usuario_login.innerHTML = 'Campo inválido';
+        senha.borderColor = 'red';
     }
 })
