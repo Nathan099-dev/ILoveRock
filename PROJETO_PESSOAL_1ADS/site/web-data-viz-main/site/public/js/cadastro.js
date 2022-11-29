@@ -1,39 +1,15 @@
-const nome = document.getElementById('input_nome');
-const idade = document.getElementById('input_idade');
-const email = document.getElementById('input_email');
-const senha = document.getElementById('input_senha');
-const confirmacao = document.getElementById('input_confirma_senha');
+function cadastrar(){
+    const nome_usuario = input_nome.value;
+    const idade_usuario = input_idade.value;
+    const email_usuario = input_email.value;
+    const senha_usuario = input_senha.value;
+    const confirmar_senha_cadastrada = input_confirma_senha.value;
 
-const botao = document.getElementById('btn');
-
-botao.onclick = function cadastrar(){
-    const nome_usuario = nome.value;
-    const idade_usuario = idade.value;
-    const email_usuario = email.value;
-    const senha_usuario = senha.value;
-    const confirmar_senha_cadastrada = confirmacao.value;
-
-    if (nome_usuario == '') {
+    if (input_nome.value == '') {
         window.alert('Campo inválido');
+        input_nome.style.borderColor = 'red';
 
-    }else if (idade_usuario == '') {
-        window.alert('Campo inválido');
-
-    }else if (email_usuario == '') {
-        window.alert('Campo inválido');
-
-    }else if (email_usuario.indexOf('@').value == -1 || email_usuario.indexOf('.').value == -1) {
-        Window.alert('email inválido');
-
-    }else if (senha_usuario == '') {
-        window.alert('Campo inválido');
-
-    }else if (senha_usuario.length < 8) {
-        window.alert('Cadastre uma senha maior');
-
-    }else if (confirmacao != senha_usuario) {
-        
+    }else if (input_idade.value == '') {
+        window.alert('')
     }
-
 }
-
