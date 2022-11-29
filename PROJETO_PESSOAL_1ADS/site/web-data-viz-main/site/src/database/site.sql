@@ -69,11 +69,9 @@ SELECT * FROM usuario_cadastrado;
 SELECT * FROM subgeneros s;
 SELECT * FROM bandas b;
 
+SELECT * FROM usuario_cadastrado;
+SELECT * FROM subgeneros;
+SELECT * FROM bandas;
+
 -- juntando tabelas
-SELECT * FROM usuario_cadastrado JOIN usuario_cadastrado ON bandas WHERE fk_bandas = id_usuario;
-SELECT * FROM bandas JOIN bandas ON subgêneros WHERE fk_bandas = id_subgenero;
-
-
-select * from usuario_cadastrado;
-select * from subgeneros;
-select * from bandas;
+SELECT * FROM subgeneros JOIN bandas ON id_subgenero = fk_subgenero JOIN usuario_cadastrado ON id_banda = fk_banda;
