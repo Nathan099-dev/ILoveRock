@@ -57,40 +57,20 @@ header{
     background-color: rgb(117, 3, 3);
 }
 
-
-
-#dashboard{
+.cards{
     width: 100%;
-	display:flex;
-	align-items:center;
-	justify-content:center;
-    padding: 2.5rem;
-    display: flex;
-    margin: 5rem 0;
-    align-items: center;
-    justify-content: center;
+    padding: 10rem;
 }
 
-#dashboard .dashboard-content{
-    width: 100%;
-    max-width: 500px;
-    padding: 2rem 1.5rem;
+.cards-single{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #000;
 }
 
+.hard-rock{
+    width:20%;
+    background-color: red;
 
-#dashboard .dashboard-content select{
-    padding: .5rem;
-	background-color: #282828;
-	border: 1px double red;
-	color:#fff;
-	margin: 0 12px;
-    outline: none;
-    display: flex;
-    
 }
+
 
 
