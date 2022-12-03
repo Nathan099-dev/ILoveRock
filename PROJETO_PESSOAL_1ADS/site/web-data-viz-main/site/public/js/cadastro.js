@@ -42,8 +42,8 @@ function cadastrar(){
     }
 
     else{
-        window.location.replace('./login.html');
         window.alert('Usuário cadastrado');
+        window.location.replace('./login.html');
 
     }
 }

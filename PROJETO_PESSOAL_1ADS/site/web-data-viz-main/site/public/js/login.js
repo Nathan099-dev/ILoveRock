@@ -1,16 +1,8 @@
 function logar(){
-    const email = mail_login.value;
-    const senha = password_login.value;
+    var email_usuario = input_email_login.value;
+    var senha = input_password_login.value;
 
-    if (email == '') {
-        window.alert('Campo incorreto');
-    }
-
-    if (senha == '') {
-        window.alert('Campo invaĺido');
-    }
-
-    else{
-        window.location.replace('./dashboard.html');
+    if (email_usuario == '') {
+        alert('Campo inválido');
     }
 }
