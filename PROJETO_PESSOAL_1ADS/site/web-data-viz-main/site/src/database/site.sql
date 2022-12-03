@@ -1,3 +1,4 @@
+drop database iLoveRock;
 CREATE DATABASE iLoveRock;
 USE iLoveRock;
 
@@ -39,7 +40,8 @@ INSERT INTO usuario_cadastrado VALUES
 (null, 'Márcia', 'Gamba', 60, 'feminino', 4),
 (null, 'Laís', 'Mariko', 25, 'feminino', 4),
 (null, 'Bianca ', 'de Villa',19, 'feminino', 5),
-(null, 'Nicolas', 'de Villa', 17, 'masculino', 5);
+(null, 'Nicolas', 'de Villa', 17, 'masculino', 5),
+(null, 'Rodrigo', 'Oliveira', , '17', 1);
 
 
 
@@ -63,15 +65,10 @@ INSERT INTO bandas VALUES
 (NULL, 'Phill Collins', 5),
 (NULL, 'Eagles', 5);
 
-select * from bandas;
-
-SELECT * FROM usuario_cadastrado;
-SELECT * FROM subgeneros s;
-SELECT * FROM bandas b;
-
-SELECT * FROM usuario_cadastrado;
 SELECT * FROM subgeneros;
 SELECT * FROM bandas;
+SELECT * FROM usuario_cadastrado;
+
 
 -- juntando tabelas
 SELECT * FROM subgeneros JOIN bandas ON id_subgenero = fk_subgenero JOIN usuario_cadastrado ON id_banda = fk_banda;
