@@ -59,7 +59,7 @@ header{
 
 .cards{
     width: 100%;    
-    padding: 5rem;
+    padding: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,5 +68,7 @@ header{
 .cards .hard_rock{
     background-color: black;
     max-width: 300px;
+    padding: .5rem 1.5rem;
+
     
 }
