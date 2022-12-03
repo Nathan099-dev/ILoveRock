@@ -1,15 +1,51 @@
-const nome = document.getElementById('input_nome');
-const idade = document.getElementById('input_idade');
-const user_email = document.getElementById('input_email');
-const senha = document.getElementById('input_senha');
-const confirma_senha = document.getElementById('input_confirma_senha');
-const botao = document.getElementById('btn');
+function cadastrar(){
+    var nome = input_nome.value;
+    var idade = input_idade.value;
+    var email = input_email.value;
+    var senha = input_senha.value;
+    var confirmar_senha = input_confirma_senha.value;
 
-botao.addEventListener('click', function cadastrar(){
-    if (nome.value == '') {
-        window.alert('Campo inválido');
-        nome.style.borderColor = 'red';
+    if (nome == '') {
+        window.alert(' Campo nome, inválido');
     }
-});
 
-cadastrar();
+    if (idade == '') {
+        window.alert('Campo idade, inválido')
+    }
+
+    if (email == '') {
+        window.alert('Campo email, inválido');
+    }
+
+    if (email.indexOf('@').value == -1 || email.indexOf('.').value == -1) {
+        window.alert('Isto não é um endereço de email válido');
+    }
+
+    if (senha == '') {
+        window.alert('Campo senha, inválido');
+    }
+
+    if (senha.length < 8) {
+        window.alert('sua senha precisa ter pelo menos oito caracteres');
+    }
+
+    if (senha.indexOf('@').value == -1 && senha.index('A').value == -1) {
+        window.alert('Sua senha precisa ter pelo menos uma letra maiúscula e um caracter especial');
+    }
+
+    if (confirmar_senha == '') {
+        window.alert('Campo  confirmar senha, inválido');
+    }
+
+    if (confirmar_senha != senha) {
+        window.alert('As senhas não são iguais')
+    }
+
+    else{
+        window.location.replace('./login.html');
+        window.alert('Usuário cadastrado');
+
+    }
+}
+
+
