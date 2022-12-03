@@ -58,19 +58,15 @@ header{
 }
 
 .cards{
-    width: 100%;
-    padding: 10rem;
-}
-
-.cards-single{
+    width: 100%;    
+    padding: 5rem;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hard-rock{
-    width:20%;
-    background-color: red;
-
+.cards .hard_rock{
+    background-color: black;
+    max-width: 300px;
+    
 }
-
-
-
