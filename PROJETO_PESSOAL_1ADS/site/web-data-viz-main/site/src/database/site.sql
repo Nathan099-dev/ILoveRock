@@ -41,7 +41,7 @@ INSERT INTO usuario_cadastrado VALUES
 (null, 'Laís', 'Mariko', 25, 'feminino', 4),
 (null, 'Bianca ', 'de Villa',19, 'feminino', 5),
 (null, 'Nicolas', 'de Villa', 17, 'masculino', 5),
-(null, 'Rodrigo', 'Oliveira', , '17', 1);
+(null, 'Rodrigo', 'Oliveira', 17 , 'masculino', 1);
 
 
 
