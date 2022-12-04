@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/pesquisa.css">
     <script src="../js/pesquisa.js"></script>
+    <script src="../html/dashboard.html"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -27,15 +28,17 @@
 
         <section class="responder_pesquisa">
             <div class="caixa_pesquisa">
-                <h2>responda a nossa pesquisa</h2>
+                <h2>Com qual dessas variantes do rock você mais se identifica?</h2>
                 <form method="get">
-                    <form>
-                        <input type="radio"  id="input_hard_rock"><p>Hard rock</p>
-                        <input type="radio"  id="input_heavy_metal"><p>Heavy metal</p>
-                        <input type="radio"  id="input_rock_progressivo"><p>Rock progressivo</p>
-                        <input type="radio"  id="input_metal_melodico"><p>Metal melódico</p>
-                        <input type="radio"  id="input_soft_rock"><p>Soft rock</p>
-                        <button>Votar</button>
+                        <select>
+                            <option value="1">Selecione</option>
+                            <option value="2">Hard rock</option>
+                            <option value="3">Heavy metal</option>
+                            <option value="4">Rock progress</option>
+                            <option value="5">Metal melódico</option>
+                            <option value="6">Soft rock</option>
+                        </select>
+                        <button onclick="computar_voto_usuario()">Votar</button>
                     </form>
                 </form>
             </div>

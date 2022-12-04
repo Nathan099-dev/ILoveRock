@@ -12,6 +12,6 @@ function logar(){
     }
 
     else {
-        window.location.replace('./dashboard.html');
+        window.location.replace('./pesquisa.html');
     }
 }

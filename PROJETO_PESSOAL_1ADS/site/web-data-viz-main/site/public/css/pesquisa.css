@@ -77,7 +77,7 @@ section.responder_pesquisa{
 .caixa_pesquisa{
     width: 100%;
     max-width: 500px;
-    padding: 1rem;
+    padding: .5rem;
     background-color: #222;
     border: 1px solid red;
     margin: 3rem 0;
@@ -86,6 +86,7 @@ section.responder_pesquisa{
 
 .caixa_pesquisa h2{
     color: white;
+    line-height: 2rem;
     font-size: 18px;
     text-align: center;
     justify-content: center;
@@ -99,6 +100,7 @@ section.responder_pesquisa{
 .caixa_pesquisa form{
     width: 100%;
     display: flex;
+    padding:.5rem 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -106,17 +108,13 @@ section.responder_pesquisa{
 }
 
 
-.caixa_pesquisa input{
+.caixa_pesquisa select, option{
     color: white;
+    margin-top: 0.3rem;
+    margin-bottom: 3rem;
+    background-color: #222;
 }
-.login-box form button{
-    background-color: red;
-    margin-top: 15px;
-    color: white;
-    padding: 6px 8px;
-    border:  none;
-    cursor:pointer;
-}
+
 
 .caixa_pesquisa p{
     color: white;
@@ -127,7 +125,7 @@ section.responder_pesquisa{
 
 .caixa_pesquisa form button{
     background-color: red;
-    margin-top: 15px;
+    margin-top: 120px;
     color: white;
     padding: 6px 8px;
     border:  none;
