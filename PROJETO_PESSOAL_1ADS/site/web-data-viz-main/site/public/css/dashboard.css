@@ -6,6 +6,8 @@
 
 body{
     background-color: #f0f2f5;
+    overflow-x: hidden;
+    max-width: 1200px;
 }
 
 .container{
@@ -56,19 +58,52 @@ header{
 .menu-itens button:hover{
     background-color: rgb(117, 3, 3);
 }
-
-.cards{
-    width: 100%;    
+ .cards{
+    background-color: white;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    width: 100vw;    
     padding: 10rem;
+    margin: 0 1rem;
     display: flex;
+
     align-items: center;
     justify-content: center;
 }
 
-.cards .hard_rock{
-    background-color: black;
+ .hard_rock{
+    background-color: red;
     max-width: 300px;
-    padding: .5rem 1.5rem;
+    padding: 4rem 8rem;
+    float: right;
+    margin:  0 2rem;
 
     
+}
+
+.heavy_metal{
+    background-color: black;
+    padding: 4rem 5rem;
+    margin: 0 auto;
+}
+
+.rock_progressivo{
+    background-color: red;
+    padding: 4rem 5rem;
+    margin: 0 2rem;
+};
+
+
+
+.metal_melodico{
+    background-color: black;
+    padding: 4rem 5rem;
+    margin: 0 2rem;
+}
+
+
+.soft_rock{
+    background-color: red;
+    padding: 4rem 5rem;
+    margin: 0 2rem;
 }
