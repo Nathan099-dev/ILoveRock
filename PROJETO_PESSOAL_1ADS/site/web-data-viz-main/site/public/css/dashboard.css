@@ -82,6 +82,11 @@ header{
 
 .hard_rock p{
     font-size: 23px;
+    
+}
+
+.hard_rock h2{
+    margin-top: 20px;
 }
 
 .heavy_metal{
@@ -92,7 +97,14 @@ header{
 
 .heavy_metal p{
     font-size: 23px;
-    color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.heavy_metal h2{
+    font-size: 23px;
+    color: white;
+    margin-top: 20px;
     font-weight: bold;
 }
 
@@ -107,6 +119,10 @@ header{
     font-weight: bold;
 }
 
+.rock_progressivo h2{
+    margin-top: 20px;
+}
+
 .metal_melodico{
     background-color: #000;
     padding: 4rem 5rem;
@@ -114,9 +130,16 @@ header{
 }
 
 .metal_melodico p{
-    color: red;
+    color: white;
     font-size: 23px;
     font-weight: bold;
+
+}
+
+.metal_melodico h2{
+    margin-top: 20px;
+    color: white;
+    ;
 
 }
 
@@ -129,4 +152,8 @@ header{
 .soft_rock p{
     font-weight: medium;    
     font-size: 23px;
+}
+
+.soft_rock h2{
+    margin-top: 20px;
 }
