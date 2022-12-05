@@ -25,12 +25,11 @@ function computar_voto_usuario(){
     if (Option.value == 0) {
         window.alert('Escolha uma opção válida')
 
-    }else{
-        window.alert('Voto Computado');
-        window.location.replace('./dashboard.html');
     }
+        
+  }
    
- }
+ 
 
 
 

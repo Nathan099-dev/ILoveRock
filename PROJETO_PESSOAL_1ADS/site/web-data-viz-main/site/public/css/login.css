@@ -128,6 +128,7 @@ section#tela_login{
 
 .login-box form button{
     background-color: red;
+    border: 1px solid white;
     margin-top: 15px;
     color: white;
     padding: 6px 8px;
@@ -138,6 +139,7 @@ section#tela_login{
 
 .login-box form button:hover{
     background-color: rgb(129, 5, 5);
+    transition: .5s;    
 }
 
 .login-box p{

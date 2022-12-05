@@ -1,17 +1,15 @@
-function logar(){
-    const email = input_email_login.value;
-    const senha = input_password_login.value;
+const email_cadastrado = document.getElementById('input_email_login');
+const senha_cadastrada = document.getElementById('input_password_login');
+const btn = document.getElementById('btn_login');
 
-    if (email == '') {
-        window.alert('Campo de email, inválido');
+btn.onclick = function logar(email, senha){
+    const email_usuario = email.value;
+    const senha_usuario = senha.value;
+
+    if (email_usuario == '') {
+        window.alert('Campo inválido');
         email.style.borderColor = 'red';
     }
-
-    else if (senha == '') {
-        window.alert('Campo de senha, inválido')
-    }
-
-    else {
-        window.location.replace('./pesquisa.html');
-    }
 }
+
+logar();

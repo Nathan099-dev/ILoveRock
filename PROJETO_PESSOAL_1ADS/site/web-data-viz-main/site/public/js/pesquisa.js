@@ -5,10 +5,10 @@ var quantidade_voto = 0;
 
 function computar_voto_usuario(){
     var usuario_voto = {
-        Nome: '',
-        Idade: '',
-        Email:'',
-        Estilo_escolhido:'',
+        Nome: 'Nathan',
+        Idade: '23',
+        Email:'nathan.teste@teste.com',
+        Estilo_escolhido:'Heavy metal',
     }
     
     for(var votante; usuarios_votantes.length; votante++){
@@ -22,14 +22,14 @@ function computar_voto_usuario(){
     }
 
 
-    if (Option.value == 0) {
+    if (option.value == 1) {
         window.alert('Escolha uma opção válida')
 
     }else{
         window.alert('Voto Computado');
-        window.location.replace('./dashboard.html');
+        window.location.assign('./dashboard.html');
     }
-   
+    
  }
 
 
