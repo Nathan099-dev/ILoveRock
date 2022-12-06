@@ -27,7 +27,7 @@ function computar_voto_usuario(){
 
     }else{
         window.alert('Voto Computado');
-        window.location.assign('./dashboard.html');
+        window.location.assign('../dashboard.html');
     }
     
  }
