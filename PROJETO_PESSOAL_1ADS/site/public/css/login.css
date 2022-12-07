@@ -126,6 +126,10 @@ section#tela_login{
     color: white;
 }
 
+.login-box form input.invalid{
+    border: 1px solid red;
+}
+
 .login-box form button{
     background-color: red;
     border: 1px solid white;

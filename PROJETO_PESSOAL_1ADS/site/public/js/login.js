@@ -1,19 +1,14 @@
-function login(){
+function logar(){
     const email = input_email_login.value;
     const senha = input_password_login.value;
 
-    if (input_email_login.value == '') {
+    if (email == '') {
         window.alert('Campo inválido');
 
-    }else if (input_password_login.value == '') {
+    }else if (senha == '') {
         window.alert('Campo inválido');
 
-    }else{
-        window.location.replace('./pesquisa.html');
+    }else {
+        window.alert('usuário logado');
     }
-
-
-
-
-
 }

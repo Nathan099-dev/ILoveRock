@@ -22,13 +22,7 @@ function computar_voto_usuario(){
     }
 
 
-    if (option.value == 1) {
-        window.alert('Escolha uma opção válida')
-
-    }else{
-        window.alert('Voto Computado');
-        window.location.assign('../dashboard.html');
-    }
+    window.location.href = 'dashbard.html'
     
  }
 
